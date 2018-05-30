@@ -1,0 +1,69 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+        "name": "ang2-conduit"
+    },
+    "apps": [
+        {
+            "root": "src",
+            "outDir": "dist",
+            "assets": [
+                "assets",
+                "favicon.ico"
+            ],
+            "index": "index.html",
+            "main": "main.ts",
+            "polyfills": "polyfills.ts",
+            "test": "test.ts",
+            "tsconfig": "tsconfig.app.json",
+            "testTsconfig": "tsconfig.spec.json",
+            "prefix": "app",
+            "styles": [
+                "styles.css",
+                "assets/css/bootstrap.min.css",
+                "assets/css/material-dashboard.css",
+                "assets/css/demo.css"
+            ],
+            "scripts": ["../node_modules/jquery/dist/jquery-3.1.1.min.js",
+                "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+                "assets/js/material.min.js",
+                "assets/js/chartist.min.js",
+                "assets/js/arrive.min.js",
+                "assets/js/perfect-scrollbar.jquery.min.js",
+                "assets/js/bootstrap-notify.js",
+                "assets/js/material-dashboard.js",
+                "assets/js/demo.js"
+            ],
+            "environmentSource": "environments/environment.ts",
+            "environments": {
+                "dev": "environments/environment.ts",
+                "prod": "environments/environment.prod.ts"
+            }
+        }
+    ],
+    "e2e": {
+        "protractor": {
+            "config": "./protractor.conf.js"
+        }
+    },
+    "lint": [
+        {
+            "project": "src/tsconfig.app.json"
+        },
+        {
+            "project": "src/tsconfig.spec.json"
+        },
+        {
+            "project": "e2e/tsconfig.e2e.json"
+        }
+    ],
+    "test": {
+        "karma": {
+            "config": "./karma.conf.js"
+        }
+    },
+    "defaults": {
+        "styleExt": "css",
+        "component": {}
+    }
+}

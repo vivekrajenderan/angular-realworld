@@ -1,0 +1,6 @@
+<div class="row" *ngIf="errorList">
+<div class="col-md-12 col-xs-12 col-sm-12">
+    <div *ngFor="let error of errorList" class="alert alert-danger" [innerHTML]="errorList">  
+    </div>
+</div>
+</div>
